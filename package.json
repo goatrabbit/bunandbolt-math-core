@@ -1,0 +1,21 @@
+{
+  "name": "bunandbolt-math-core",
+  "private": true,
+  "description": "The calculation code behind Bun & Bolt Math, with its tests",
+  "homepage": "https://bunandbolt.com/math/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/goatrabbit/bunandbolt-math-core.git"
+  },
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": "^22.12.0 || ^24.0.0 || >=26.0.0"
+  },
+  "scripts": {
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "vitest": "5.0.3"
+  }
+}

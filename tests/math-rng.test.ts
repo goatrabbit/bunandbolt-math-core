@@ -26,9 +26,13 @@ describe('mulberry32 and the samplers: the same stream as H19-sim-core.mjs', () 
   });
   it('every sampler in a fixed order on one stream', () => {
     const r = mulberry32(7);
-    expect([die(r), bernoulli(r, 0.3), expo(r), laplace(r, 2), cauchy(r), uniform(r, -1, 3), bimodal(r, -2, 2, 0.5)]).toEqual([
-      1, 1, 3.768253139403831, 0.927511386597965, -0.3058470282904662, 0.8649305300787091, -2.068780866451738,
-    ]);
+    const samples = [die(r), bernoulli(r, 0.3), expo(r), laplace(r, 2), cauchy(r), uniform(r, -1, 3), bimodal(r, -2, 2, 0.5)];
+    expect(samples.slice(0, 3)).toEqual([1, 1, 3.768253139403831]);
+    // Math.log is implementation-approximated (ECMA-262, Math.log). Subtracting two exponentials differs by
+    // 4 ULP here between macOS arm64 and Linux x64; keep a narrow absolute bound for this sample only.
+    expect(Math.abs(samples[3] - 0.927511386597965)).toBeLessThanOrEqual(8 * Number.EPSILON);
+    expect(samples.slice(4)).toEqual([-0.3058470282904662, 0.8649305300787091, -2.068780866451738]);
+    expect(r()).toBe(0.2578155610244721); // Exactly ten uniforms were consumed; the stream itself is unchanged.
   });
   it('a drawn (piecewise-linear) density', () => {
     const s = drawnSampler([0, 1, 2, 3], [1, 3, 0, 2])!;

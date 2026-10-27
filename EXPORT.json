@@ -2,13 +2,13 @@
   "name": "bunandbolt-math-core",
   "note": "Exported from the Bun & Bolt site source by math-src/scripts/export-math-core.mjs. Edit the source there, not here.",
   "source": {
-    "commit": "9b446e0249aa1b37b67dfbc3f82cb8779c52a10a",
-    "committed": "2026-10-27T15:06:31+08:00",
+    "commit": "943e5b6e499052eb0a7cf85a31d86ff2e9e7bc6c",
+    "committed": "2026-10-27T15:39:26+08:00",
     "directory": "math-src"
   },
   "material": {
     "from": "commit",
-    "commit": "9b446e0249aa1b37b67dfbc3f82cb8779c52a10a"
+    "commit": "943e5b6e499052eb0a7cf85a31d86ff2e9e7bc6c"
   },
   "manifestSha256": "98a1c23750fb323ae9c2a5de2a6f06830e307bd6f2959049d55ea07cf1ac5aea",
   "exporterSha256": "fa024fc63f3f1bdb7c6b2e2421375bb714d412165205dabf2888245874bc34ec",
@@ -27,10 +27,10 @@
     }
   ],
   "files": {
-    ".github/workflows/test.yml": "59851e2e08931c32e46108967672917948f6e3d0e2bd65163b401c6b920be643",
+    ".github/workflows/test.yml": "38ae295a9b48c76ebb029dbbe4a49fda8bb8fe22929a76dcf3d435d58de5bab2",
     ".gitignore": "4d56952b0fb13bf8f9b6c13a6d4c34a075bac3af447636a1df4335d7576e2f97",
     "LICENSE": "05d640828ba079db887396c5021df524cf4aef0d7a626df77b0a7f844088a5c5",
-    "README.md": "aa2faaf3bd0eaf5222af2c035dd99db21c9997d4d634fb66b678cf2b3c5b1917",
+    "README.md": "c83a7dffe0aa97c7cb670484f64b724c6f1432b99772b9db81072c13f7c52489",
     "examples/exact-input.test.ts": "b40140f36ae56977a3386d338e9167501ac5afd57846f9a8b76966431e7ccf30",
     "examples/integration-limits.test.ts": "b46ad90fc0faef7ae2396cab3d330e6924ad1b47bb9be296f040e588df6bf8d0",
     "examples/singular-matrix.test.ts": "435dacf2baab23402dcb49ff809ff35823f8b87e0d56b8f77fd87b283526f138",
@@ -84,7 +84,7 @@
     "tests/math-powers.test.ts": "b79ba1bed77a65dfaaf9de19cf1982e95de5b9a74990958c5ca4f8d763eb3870",
     "tests/math-quad.test.ts": "35a169b61d8201d092c3c20a5e48b72d566e80469c89ba2b9e54111ccd0647c0",
     "tests/math-rational.test.ts": "3618c6b31c563b4d022f4bf507f44c56abd85b636dd853c3708be834b4739014",
-    "tests/math-rng.test.ts": "215bc0c47042ce0fa1c5e2f6186e9811e16f1621cb4c02d4c1ac02bc5ae1ea4f",
+    "tests/math-rng.test.ts": "372a42ee664cb148b2ad0b215eb700770b364de9199f55faa505f95828269e91",
     "tests/math-roots.test.ts": "020c563dfd74891c99c0eae7ef678e9748443b135e514242f7a543f10bc90bb5",
     "tests/math-sampling.test.ts": "030519541c574faf6fde0a818807db23426d773538586a0f70f4da5898c317e9",
     "tests/math-special.test.ts": "56408ad6ff7b0cb5a24046220a4ab937255369ed0a38d2e99f0f1cd6338121c6",
